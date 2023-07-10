@@ -1,0 +1,175 @@
+/* Generales */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #282248;
+  color: #444444;
+}
+
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+/* Portada */
+
+.portada {
+  background-image: url(../img/morg.webp);
+  background-size: cover;
+  background-position: center top;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.portada__titulo {
+  color: white;
+  font-size: 2rem;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #341eae;
+  padding: 10px;
+  width: 100px;
+}
+
+/* Página notas del parche */
+
+.articulos-ntp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.articulo__item {
+  margin: 20px;
+}
+
+.articulo-img {
+  width: 100%;
+}
+
+/* Página notas del parche */
+
+/* Seccion contacto */
+
+.redirect {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.redirect__item {
+  margin: 2rem;
+}
+
+/* Form */
+
+.form {
+  background-color: #341eae;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.form__label {
+  text-align: start;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form__input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.form__txtarea {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.form__submit {
+  background-color: #ffffff;
+  margin: 30px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.footer__img {
+  height: 200px;
+}
+.footer__resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #080033;
+  padding-top: 15px;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+/* Mediaqueries */
+
+@media (min-width: 480px) {
+  .evento__img {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .navquery {
+    flex-direction: column;
+  }
+
+  .redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+  }
+}
